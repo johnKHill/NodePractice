@@ -1,17 +1,18 @@
 // Include Express...duh
 var express = require('express');
-// setip router FROM the express module
+// setup router FROM the express module
 var router = express.Router();
-// get request. We have this because we npm installed it. 
-//We need it to make http request
+// get request module. We have this because we npm installed it. 
+//We need it to make http requests
 const request = require(`request`);
 // Get our credentials from our non-git file to keep them safe from the scary Internet
 const creds = require(`../config/creds`);
 
-// Set up the urls we are going to use over and over
+// Set up the urls we are going to use over and over 
 const apiBaseUrl = `http://api.themoviedb.org/3`;
 const nowPlayingUrl = `${apiBaseUrl}/movie/now_playing?api_key=${creds.api_key}`;
 const imageBaseUrl = `http://image.tmdb.org/t/p/w300`;
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -43,8 +44,8 @@ router.get(`/movie/:movieId`,(req,res)=>{
 				currentMovie: parsedData,
 				imageBaseUrl
 			})
-		})
-})
+		});
+});
 module.exports = router;
 
 

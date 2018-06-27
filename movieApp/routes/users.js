@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/daffy', function(req, res, next) {
-  res.redirect('new route]');
+  res.redirect('http://espn.com/');
+  // res.send(`new route`);
 });
 
 
