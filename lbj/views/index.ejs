@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
-	<h1>I am Groot!</h1>
-	<img src="https://images-na.ssl-images-amazon.com/images/I/41wg7EtPiRL.jpg" />
+    <h1>I am not Groot!</h1>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41wg7EtPiRL.jpg" />
 
+    <h1>Atlanta Teams</h1>
+    <h2><%= atlTeams[0] %></h2>
+    <h2><%= atlTeams[1] %></h2>
+    <h2><%= atlTeams[2] %></h2>
+    <h2><%= atlTeams[3] %></h2>
 
-	<h2><%= atlTeams[0] %></h2>
-	<h2><%= atlTeams[1] %></h2>
-	<h2><%= atlTeams[2] %></h2>
-	<h2><%= atlTeams[3] %></h2>
-
-	<ul>
-		<% atlTeams.forEach((team)=> {%>
-			<li><%= team %></li>
-		<% })%>
-	</ul>
-	
+    <ul>
+        <% atlTeams.forEach((team)=> {%>
+            <li><%= team %></li>
+        <% })%>
+    </ul>
+    
 
 </body>
 </html>
